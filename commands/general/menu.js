@@ -17,7 +17,7 @@ module.exports = {
         ? "🌆 Buenas tardes"
         : "🌙 Buenas noches";
 
-    // contacto citado (para que aparezca como reenviado)
+    
     const fkontak = {
       key: {
         participant: "0@s.whatsapp.net",
@@ -32,8 +32,9 @@ module.exports = {
         },
       },
     };
-
-    // 🌟 acá podés escribir el texto del menú como quieras:
+    
+ await m.react("🦇");
+    
     const textoMenu = `
 ${saludo}, 𝖲𝗈𝗒 ${namebot}
 
@@ -117,28 +118,27 @@ ${saludo}, 𝖲𝗈𝗒 ${namebot}
 
 `.trim();
 
-    // 🌌 URL de tu video o gif (MP4 recomendado)
-    const videoUrl = "https://files.catbox.moe/wacw2i.mp4"; // <-- Cambialo por tu link
+    const videoUrl = "https://files.catbox.moe/wacw2i.mp4"; 
 
     await client.sendMessage(
       m.chat,
       {
         video: { url: videoUrl },
         caption: textoMenu,
-        gifPlayback: true, // hace que se repita como gif si es corto
+        gifPlayback: true, 
         contextInfo: {
           forwardingScore: 1,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363345778623279@newsletter", // tu canal
+            newsletterJid: "120363345778623279@newsletter", 
             serverMessageId: "1",
             newsletterName: "𝐒𝐩𝐚𝐜𝐞 𝐖𝐨𝐫𝐥𝐝 𝐂𝐥𝐮𝐛'𝐬 - 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✰",
           },
           externalAdReply: {
             title: `${namebot}`,
           //  body: `${dev}`,
-            thumbnailUrl: "https://files.catbox.moe/psvfzq.jpg", // imagen de vista previa
-            sourceUrl: "https://draculaura.vercel.app", // link de tu canal o página
+            thumbnailUrl: "https://files.catbox.moe/psvfzq.jpg", 
+            sourceUrl: "https://draculaura.vercel.app", 
             mediaType: 1,
             renderLargerThumbnail: false,
           },

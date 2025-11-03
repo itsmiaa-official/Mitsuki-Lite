@@ -136,8 +136,8 @@ ${saludo}, 𝖲𝗈𝗒 ${namebot}
           },
           externalAdReply: {
             title: `${namebot}`,
-            body: `${dev}`,
-            thumbnailUrl: "https://files.catbox.moe/e1lirs.jpg", // imagen de vista previa
+          //  body: `${dev}`,
+            thumbnailUrl: "https://files.catbox.moe/psvfzq.jpg", // imagen de vista previa
             sourceUrl: "https://starlights.vercel.app", // link de tu canal o página
             mediaType: 1,
             renderLargerThumbnail: false,

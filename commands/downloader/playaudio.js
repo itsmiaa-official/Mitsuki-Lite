@@ -29,12 +29,12 @@ module.exports = {
       const canal = author?.name || 'Desconocido';
 
       const infoMessage = `*🎵 Título:* ${title}
-*🎬 Canal:* ${canal}
-*👀 Vistas:* ${vistas}
-*⏳ Duración:* ${timestamp}
-*🤩 Calidad:* 200kbps
-*📆 Publicado:* ${ago}
-*🔗 Link:* ${url}`.trim();
+\`🎬 Canal:\` ${canal}
+\`👀 Vistas:\` ${vistas}
+\`⏳ Duración:\` ${timestamp}
+\`🤩 Calidad:\` 200kbps
+\`📆 Publicado:\` ${ago}
+\`🔗 Link:\` ${url}`.trim();
 
       const thumb = (await client.getFile(thumbnail))?.data;
       const external = {

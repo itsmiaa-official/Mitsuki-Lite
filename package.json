@@ -1,5 +1,5 @@
 {
-  "name": "Starlights",
+  "name": "Draculaura-Wa",
   "version": "1.0.0",
   "description": "Simple WhatsApp Bot",
   "main": "start.js",
@@ -13,7 +13,7 @@
     "bot-wa",
     "multi-device"
   ],
-  "author": "Zam",
+  "author": "China",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"

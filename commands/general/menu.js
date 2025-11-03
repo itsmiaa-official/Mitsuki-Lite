@@ -35,21 +35,86 @@ module.exports = {
 
     // 🌟 acá podés escribir el texto del menú como quieras:
     const textoMenu = `
-${saludo}, *${m.pushName || "Usuario"}* 💫
+${saludo}, 𝖲𝗈𝗒 ${namebot}
 
-✦ Bienvenid@ a *Starlights Bot*  
-Creadora: 𝕮𝖍𝖎𝖓𝖆 💋  
-Versión: 1.0.0  
-Librería: 𝖡𝖺𝗂𝗅𝖾𝗒𝗌 𝗠𝗗  
+\`🍒 𝖴𝗌𝗎𝖺𝗋𝗂𝗈:\` *${𝗆.𝗉𝗎𝗌𝗁𝖭𝖺𝗆𝖾 || "𝖴𝗌𝗎𝖺𝗋𝗂𝗈"}* 
+\`🌱 𝖵𝖾𝗋𝗌𝗂𝗈𝗇:\` ${version}
 
-📜 *Menú principal:*  
-• #info  
-• #grupos  
-• #herramientas  
-• #descargas  
-• #owner  
 
-> © 2025 Starlights ✦
+\`.  . ︵ 𝖦𝖤𝖭𝖤𝖱𝖠𝖫.  ◌Ⳋ𝅄\`
+
+˙.꒷🥗.𖦹˙ іᥒ𝖿᥆
+˙.꒷🥗.𖦹˙ mᥱᥒᥙ
+˙.꒷🥗.𖦹˙ ⍴іᥒg
+˙.꒷🥗.𖦹˙ ᥣіძ
+
+\` .  . ︵ 𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣𝖤𝖱.  ◌Ⳋ𝅄\`
+
+˙.꒷🍒.𖦹˙ ძrі᥎ᥱ
+˙.꒷🍒.𖦹˙ ძr᥆⍴ᑲ᥆᥊
+˙.꒷🍒.𖦹˙ 𝖿ᑲ
+˙.꒷🍒.𖦹˙ mᥱძіᥲ𝖿іrᥱ
+˙.꒷🍒.𖦹˙ ⍴ᥣᥲᥡᥲᥙძі᥆
+˙.꒷🍒.𖦹˙ ⍴ᥣᥲᥡ᥎іძᥱ᥆
+˙.꒷🍒.𖦹˙ s⍴᥆𝗍і𝖿ᥡ
+˙.꒷🍒.𖦹˙ 𝗍іk𝗍᥆k
+˙.꒷🍒.𖦹˙ 𝗍ᥕі𝗍𝗍ᥱr
+
+\` .  . ︵ 𝖦𝖱𝖮𝖴𝖯𝖲.  ◌Ⳋ𝅄\`
+
+˙.꒷🌱.𖦹˙ ᥴᥣ᥆sᥱ
+˙.꒷🌱.𖦹˙ ᥆⍴ᥱᥒ
+˙.꒷🌱.𖦹˙ ᥣіᥒk
+˙.꒷🌱.𖦹˙ ძᥱᥣ
+˙.꒷🌱.𖦹˙ ძᥱm᥆rᥱ
+˙.꒷🌱.𖦹˙ ⍴r᥆m᥆𝗍ᥱ
+˙.꒷🌱.𖦹˙ һіძᥱ𝗍ᥲg
+˙.꒷🌱.𖦹˙ іᥒ𝖿᥆grᥙ⍴᥆
+˙.꒷🌱.𖦹˙ kіᥴk
+˙.꒷🌱.𖦹˙ kіᥴkᥲᥣᥣ
+˙.꒷🌱.𖦹˙ ᥆ᥒ
+˙.꒷🌱.𖦹˙ rᥱ᥎᥆kᥱ
+˙.꒷🌱.𖦹˙ sᥱ𝗍ძᥱsᥴ
+˙.꒷🌱.𖦹˙ sᥱ𝗍ᥒᥲmᥱ
+˙.꒷🌱.𖦹˙ 𝗍᥆ძ᥆s
+
+\` .  . ︵ 𝖥𝖴𝖭.  ◌Ⳋ𝅄\`
+
+˙.꒷🍄.𖦹˙ gᥲᥡ
+˙.꒷🍄.𖦹˙ ȷᥲᥣᥲmᥱ
+˙.꒷🍄.𖦹˙ 𝖿᥆rmᥲr⍴ᥲrᥱȷᥲ5
+˙.꒷🍄.𖦹˙ 𝖿rᥲsᥱ
+˙.꒷🍄.𖦹˙ ᥒ᥆mᑲrᥱᥒіᥒȷᥲ
+˙.꒷🍄.𖦹˙ ⍴іr᥆⍴᥆
+
+\` .  . ︵ 𝖠𝖭𝖨𝖬𝖤.  ◌Ⳋ𝅄\`
+
+˙.꒷🌷.𖦹˙ ᥲᥒgrᥡ
+˙.꒷🌷.𖦹˙ ძᥲᥒᥴᥱ
+˙.꒷🌷.𖦹˙ һᥲ⍴⍴ᥡ
+˙.꒷🌷.𖦹˙ һᥱᥣᥣ᥆
+˙.꒷🌷.𖦹˙ һᥙg
+˙.꒷🌷.𖦹˙ kіss
+˙.꒷🌷.𖦹˙ ᥣ᥆᥎ᥱ
+˙.꒷🌷.𖦹˙ sᥲძ
+
+\` .  . ︵ 𝖳𝖮𝖮𝖫𝖲.  ◌Ⳋ𝅄\`
+
+˙.꒷🌻.𖦹˙ ᥴᥲᥣ
+˙.꒷🌻.𖦹˙ ᥴᥣіmᥲ
+˙.꒷🌻.𖦹˙ һ᥆rᥲrі᥆
+˙.꒷🌻.𖦹˙ ᥣᥱ𝗍rᥲ
+
+\` .  . ︵ 𝖲𝖳𝖨𝖢𝖪𝖤𝖱𝖲.  ◌Ⳋ𝅄\`
+
+˙.꒷🪼.𖦹˙ s𝗍іᥴkᥱr
+
+\` .  . ︵ 𝖮𝖶𝖭𝖤𝖱.  ◌Ⳋ𝅄\`
+
+˙.꒷🍁.𖦹˙ ᥲᥙ𝗍᥆ᥲძmіᥒ
+˙.꒷🍁.𖦹˙ kіᥴk2
+˙.꒷🍁.𖦹˙ ᥙ⍴ძᥲ𝗍ᥱ
+
 `.trim();
 
     // 🌌 URL de tu video o gif (MP4 recomendado)
@@ -71,7 +136,7 @@ Librería: 𝖡𝖺𝗂𝗅𝖾𝗒𝗌 𝗠𝗗
           },
           externalAdReply: {
             title: `${namebot}`,
-            body: "Creado con amor por 𝕮𝖍𝖎𝖓𝖆 💫",
+            body: `${dev}`,
             thumbnailUrl: "https://files.catbox.moe/e1lirs.jpg", // imagen de vista previa
             sourceUrl: "https://starlights.vercel.app", // link de tu canal o página
             mediaType: 1,

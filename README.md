@@ -38,8 +38,8 @@ Descargas rápidas:
 ```bash
 apt install git -y
 apt install nodejs -y
-git clone https://github.com/ittschinitaaa/Starlights.git
-cd Starlights
+git clone https://github.com/ittschinitaaa/Draculaura-Wa.git
+cd Draculaura-Wa
 yarn install
 npm install
 node index.js

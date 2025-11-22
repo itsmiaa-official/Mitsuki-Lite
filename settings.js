@@ -28,7 +28,7 @@ global.thumbnailUrl = "https://files.catbox.moe/1zzaug.jpg"; //Cambia esta image
 
 global.my = {
   ch: "120363345778623279@newsletter", //Cambia este id por el de tu canal
-  name1: "𝐃𝐫𝐚𝐜𝐮𝐥𝐚𝐮𝐫𝐚-𝐛𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥
+  name1: "𝐃𝐫𝐚𝐜𝐮𝐥𝐚𝐮𝐫𝐚-𝐛𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", 
 };
 
 let file = require.resolve(__filename);

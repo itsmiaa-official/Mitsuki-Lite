@@ -24,10 +24,10 @@ module.exports = {
       hour12: false,
     });
 
-    const info = `${botname} - ${author}
+    const info = `${namebot} - ${author}
 
 *Versión:* ${pkg.version}
-*Autor:* ${botname}
+*Autor:* ${namebot}
 *Uptime:* ${h}h ${min}m ${s}s
 *Plataforma:* ${platform}
 *Node.js:* ${nodeV}

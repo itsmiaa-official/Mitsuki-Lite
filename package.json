@@ -24,7 +24,7 @@
     "axios": "^0.24.0",
     "aptoide-scraper": "github:DIEGO-OFC/dv-aptoide-scraper",
     "lurcloud": "github:AzamiJs/lurcloud",
-    "@whiskeysockets/baileys": "github:gatanina-li/baileys",
+    "@whiskeysockets/baileys": "github:this-xyz/baileys",
     "chalk": "^4.1.2",
     "express": "^4.18.2",
     "fluent-ffmpeg": "^2.1.2",

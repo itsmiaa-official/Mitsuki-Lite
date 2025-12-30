@@ -5,10 +5,11 @@ module.exports = {
   description: "Chequea la conexión y muestra info del bot",
   category: "general",
   run: async (client, m, args, { prefix }) => {
+   await m.react("⏰");
     const start = Date.now();
     const tempMsg = await client.sendMessage(
       m.key.remoteJid,
-      { text: "⏰ Cargando ping..." },
+      { text: "⏳ Cargando ping..." },
       { quoted: m },
     );
     const latency = Date.now() - start;
@@ -30,7 +31,8 @@ module.exports = {
 ⏰ \`Uptime:\` [ ${h}h ${min}m ${s}s ]
 💻 \`RAM usada:\` ${ram} MB
 👤 \`Usuario ID:\` @${sender}`.trim();
-
+    
+    await m.react("✅");
     await client.sendMessage(
       m.chat,
       { text: msg, mentions: [m.sender] },

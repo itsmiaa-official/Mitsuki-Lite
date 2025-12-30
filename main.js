@@ -1,3 +1,4 @@
+  
 require("./settings");
 const fs = require("fs");
 const path = require("path");
@@ -10,7 +11,6 @@ const { resolveLidToRealJid } = require("./lib/utils");
 
 seeCommands();
 
-// ===== EVENTO DE MENSAJES =====
 module.exports = async (client, m) => {
   let body = "";
   if (m.message) {
@@ -123,18 +123,20 @@ module.exports = async (client, m) => {
       );
     }
   }
-};
 
-// ===== EVENTO GRUPAL: LLAMAR PLUGINS =====
-client.ev.on("group-participants.update", async (m) => {
-  try {
-    require("./commands/antilink")(client, m);
-    require("./commands/antifake")(client, m);
-    require("./commands/welcome")(client, m);
-  } catch (e) {
-    console.error("Error ejecutando plugin de grupo:", e);
+  // ===== EVENTO DE GRUPO: LLAMAR PLUGINS =====
+  if (m.isGroup) {
+    client.ev.on("group-participants.update", async (ev) => {
+      try {
+        require("./commands/antilink.js")(client, ev);
+        require("./commands/antifake.js")(client, ev);
+        require("./commands/welcome.js")(client, ev);
+      } catch (e) {
+        console.error("Error ejecutando plugin de grupo:", e);
+      }
+    });
   }
-});
+};
 
 // ===== RECARGA AUTOMÁTICA =====
 const mainFile = require.resolve(__filename);
@@ -148,6 +150,17 @@ fs.watchFile(mainFile, () => {
   delete require.cache[mainFile];
   require(mainFile);
 });
+
+
+
+
+
+
+
+
+
+
+
 
 /*require("./settings");
 const fs = require("fs");

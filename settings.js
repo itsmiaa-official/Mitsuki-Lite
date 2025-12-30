@@ -5,6 +5,7 @@ const chalk = require("chalk");
 
 global.owner = ['573243768166','5492644996684', '923297474483']; 
 global.version = "v1.0.𝟢 | Lite";
+global.sessionName = "China/Session";
 global.namebot = "𝕮𝖍𝖎𝖓𝖆𝕸𝖎𝖙𝖟𝖚𝖐𝖎 (𝕷𝖎𝖙𝖊)";
 global.author = "𝕮𝖍𝖎𝖓𝖆";
 global.textbot = "𝖬𝖺𝖽𝖾 💗 𝗐𝗂𝗍𝗁 𝖻𝗒 𝕮𝖍𝖎𝖓𝖆";

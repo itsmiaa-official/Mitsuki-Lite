@@ -24,7 +24,6 @@ module.exports = {
       );
 
     try {
-      // ⏳ Reacción inicial
       await client.sendMessage(m.chat, {
         react: { text: "⏳", key: m.key },
       });
@@ -128,12 +127,12 @@ module.exports = {
 
       // ✔️ Éxito
       await client.sendMessage(m.chat, {
-        react: { text: "✔️", key: m.key },
+        react: { text: "✅", key: m.key },
       });
     } catch (e) {
       // ✖️ Error
       await client.sendMessage(m.chat, {
-        react: { text: "✖️", key: m.key },
+        react: { text: "❌", key: m.key },
       });
 
       await client.sendMessage(

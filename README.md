@@ -1,20 +1,17 @@
-Bot de WhatsApp MD
-
-> ¡⚠️ IMPORTANTE: Este bot es de uso personal y educativo. No redistribuir ni vender sin autorización.! 
+> **⚠️ IMPORTANTE: Este bot es de uso personal y educativo. No redistribuir ni vender sin autorización.**
 
 
 ---
 
-Funciones
+`✰ 𝗙𝘂𝗻𝗰𝗶𝗼𝗻𝗲𝘀 𝗱𝗲 𝗹𝗮 𝗯𝗼𝘁.`
 
-Conexión WhatsApp Multi-Device (Baileys)
+*Conexión WhatsApp Multi-Device (Baileys)*
 
-Comandos de administración de grupos
+- *Comandos de administración de grupos*
 
-Comandos básicos de utilidad
+- *Comandos básicos de utilidad*
 
-Estructura simple y modular
-
+- *Estructura simple y modular*
 
 ---
 
@@ -29,5 +26,4 @@ git clone https://github.com/itsmiaa-official/China-Lite
 cd China-Lite
 yarn install
 npm install
-node index.js
-```
+node index.

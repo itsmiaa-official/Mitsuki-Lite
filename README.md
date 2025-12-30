@@ -1,6 +1,4 @@
-> **⚠️ IMPORTANTE: Este bot es de uso personal y educativo. No redistribuir ni vender sin autorización.**
-
-
+> **⚠️ IMPORTANTE: Este bot esta en contante evolución**
 ---
 
 `✰ 𝗙𝗨𝗡𝗖𝗜𝗢𝗡𝗘𝗦 𝗗𝗘 𝗟𝗔 𝗕𝗢𝗧:`

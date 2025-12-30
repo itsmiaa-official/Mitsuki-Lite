@@ -50,7 +50,7 @@ module.exports = {
         contextInfo: {
           externalAdReply: {
             title: namebot,  // Título de la tarjeta
-            body: author,       // Subtítulo o descripción
+            body: textbot,       // Subtítulo o descripción
             mediaType: 1,                    // Imagen o video
             mediaUrl: catalogo,              // URL de la imagen que quieras mostrar
             sourceUrl: catalogo,             // Link que se abre al tocar la tarjeta

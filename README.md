@@ -1,3 +1,22 @@
+Bot de WhatsApp MD
+
+> ¡⚠️ IMPORTANTE: Este bot es de uso personal y educativo. No redistribuir ni vender sin autorización.! 
+
+
+---
+
+Funciones
+
+Conexión WhatsApp Multi-Device (Baileys)
+
+Comandos de administración de grupos
+
+Comandos básicos de utilidad
+
+Estructura simple y modular
+
+
+---
 
 ### 𝐈𝐧𝐬𝐭𝐚𝐥𝐚𝐜𝐢𝐨́𝐧
 

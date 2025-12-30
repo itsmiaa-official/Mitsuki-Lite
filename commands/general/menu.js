@@ -8,7 +8,7 @@ module.exports = {
     const cmds = [...global.comandos.values()];
 
     const jam = moment.tz("America/Argentina/Buenos_Aires").format("HH:mm:ss");
-    const ucapan =
+   /* const ucapan =
       jam < "05:00:00"
         ? "🄱uen 🄳ía 🌞"
         : jam < "11:00:00"
@@ -17,17 +17,17 @@ module.exports = {
         ? "🄱uenas 🅃ardes 🌄"
         : jam < "19:00:00"
         ? "🄱uenas 🅃ardes 🌄"
-        : "🄱uenas 🄽oches 🌛";
+        : "🄱uenas 🄽oches 🌛";*/
 
     const userId = m.sender;
 
-    let txt = `> ${ucapan}, *${m.pushName || "ᥙsᥙᥲrі᥆"} 𝖲᥆ᥡ ${namebot}*
+    let txt = `> һ᥆ᥣᥲ *${m.pushName || "ᥙsᥙᥲrі᥆"} 𝖲᥆ᥡ ${namebot}*, ᥱs𝗍ᥲ ᥱs mі ᥣіs𝗍ᥲ ძᥱ ᥴ᥆mᥲᥒძ᥆s.
   
 ˙.꒷🔥.𖦹˙ \`𝖢𝗋𝖾𝖺𝖽𝗈𝗋𝖺\` : *@its.chinitaaa_*
 ˙.꒷🔥.𖦹˙ \`𝖵𝖾𝗋𝗌𝗂𝗈𝗇\` : ${version}
 ˙.꒷🔥.𖦹˙ \`𝖬𝗈𝗍𝗈𝗋\`  : *𝖡ᥲіᥣᥱᥡs*
 
-> 𝖤𝗌𝗍𝖺 𝗏𝖾𝗋𝗌𝗂𝗈́𝗇 𝖽𝖾 𝗅𝖺 𝖻𝗈𝗍 𝖾𝗌 𝗉𝗎́𝖻𝗅𝗂𝖼𝖺, 𝗅𝖺 𝗏𝖾𝗋𝗌𝗂𝗈́𝗇 𝗈𝗋𝗂𝗀𝗂𝗇𝖺𝗅 𝖾𝗌 𝗉𝗋𝗂𝗏𝖺𝖽𝖺.
+> 𝖫𝖺 𝗏𝖾𝗋𝗌𝗂𝗈́𝗇 𝗈𝗋𝗂𝗀𝗂𝗇𝖺𝗅 𝖽𝖾 𝖾𝗌𝗍a 𝖻𝗈𝗍 𝖾𝗌 𝗉𝗋𝗂𝗏𝖺𝖽𝖺, la 𝖻𝗈𝗍 𝗈𝗋𝗂𝗀𝗂𝗇𝖺𝗅 𝖿𝗎𝖾 𝖼𝗋𝖾𝖺𝖽𝗈 𝖾𝗑𝖼𝗅𝗎𝗌𝗂𝗏𝖺𝗆𝖾𝗇𝗍𝖾 𝗉𝖺𝗋𝖺 ${author}.
 
 ۪֔⏜꯭ᩧᰰ᮫̩̥̩̥︵ּ۪۪۪֘᷼𓇺꥓᮫ּ̥̩̥̩̥̊᷼︵᮫ֵֹ۪۪۪꤮ 「꯭ּ✿⃘꯭֟፝͝ ᮫ּ」 ֵ꤮ֹ֪̊︵᮫̥̩̥̩̥֔᷼𓇹᮫ֹ۪۪𝆬𝆬᷼︵꯭ᩙᰰ᮫̩̥̩̥⏜ֵֹ۪۪۪۪
 \n`;

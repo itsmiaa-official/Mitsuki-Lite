@@ -24,7 +24,7 @@ global.mess = {
 //*─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ*
 
 global.icono = "";
-global.banner = "https://files.catbox.moe/talxd1.jpg";
+global.banner = "https://files.catbox.moe/7o8u1n.jpg";
 global.catalogo = "https://files.catbox.moe/1zzaug.jpg";
 
 global.my = {

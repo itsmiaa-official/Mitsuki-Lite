@@ -4,17 +4,20 @@ const pkg = require("../../package.json");
 module.exports = {
   command: ["info"],
   category: "general",
-  run: async (client, m, args, from) => {
+  run: async (client, m, args) => {
     const up = process.uptime(),
       h = Math.floor(up / 3600),
       min = Math.floor((up % 3600) / 60),
       s = Math.floor(up % 60);
+
     const cpu = os.cpus()[0]?.model.trim() || "Desconocido",
       cores = os.cpus().length;
+
     const mem = [
       (os.freemem() / 1024 / 1024).toFixed(0),
       (os.totalmem() / 1024 / 1024).toFixed(0),
     ];
+
     const platform = `${os.platform()} ${os.release()} (${os.arch()})`;
     const nodeV = process.version;
     const host = os.hostname();
@@ -39,13 +42,12 @@ module.exports = {
 
 *Fecha & Hora:* ${now}`;
 
-    await client.sendMessage(
-      m.chat,
-      {
-        image: catalogo,//{ url: "https://files.catbox.moe/sklz18.png" },
-        caption: info,
-      },
-      { quoted: m },
-    );
+    // Si catalogo es un string (URL) se envía como { url: catalogo }
+    const media = {
+      image: typeof catalogo === "string" ? { url: catalogo } : catalogo,
+      caption: info,
+    };
+
+    await client.sendMessage(m.chat, media, { quoted: m });
   },
 };

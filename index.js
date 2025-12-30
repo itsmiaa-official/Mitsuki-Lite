@@ -114,7 +114,7 @@ async function startBot() {
       );
     } catch (err) {
       log.error("Error al solicitar el código de emparejamiento:", err);
-      exec("rm -rf ./lurus_session/*");
+      exec("rm -rf ./Sessions/*");
       process.exit(1);
     }
   }
@@ -150,15 +150,15 @@ async function startBot() {
         log.warning("Primero cierre la sesión actual...");
       } else if (reason === DisconnectReason.loggedOut) {
         log.warning("Escanee nuevamente y ejecute...");
-        exec("rm -rf ./lurus_session/*");
+        exec("rm -rf ./Sessions/*");
         process.exit(1);
       } else if (reason === DisconnectReason.forbidden) {
         log.error("Error de conexión, escanee nuevamente y ejecute...");
-        exec("rm -rf ./lurus_session/*");
+        exec("rm -rf ./Sessions/*");
         process.exit(1);
       } else if (reason === DisconnectReason.multideviceMismatch) {
         log.warning("Inicia nuevamente");
-        exec("rm -rf ./lurus_session/*");
+        exec("rm -rf ./Sessions/*");
         process.exit(0);
       } else {
         client.end(
@@ -167,7 +167,7 @@ async function startBot() {
       }
     }
     if (connection === "open") {
-      log.success("Su conexión fue exitosa con Draculaura 🦇");
+      log.success("Su conexión fue exitosa con el socket");
     }
   });
 

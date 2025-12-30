@@ -1,144 +1,75 @@
 const moment = require("moment-timezone");
 
 module.exports = {
-  command: ["menu", "help", "ayuda"],
-  description: "Muestra el menú principal con video o gif",
+  command: ["help", "ayuda", "menu"],
+  description: "Muestra los comandos",
   category: "general",
-  run: async (client, m, args) => {
+  run: async (conn, m, args) => {
+    const cmds = [...global.comandos.values()];
+
     const jam = moment.tz("America/Argentina/Buenos_Aires").format("HH:mm:ss");
-   const saludo =
-  jam < "05:00:00"
-    ? "🄵𝖾𝗅𝗂𝗓 🄼𝖺𝖽𝗋𝗎𝗀𝖺𝖽𝖺 🌟"
-    : jam < "11:00:00"
-    ? "🄱𝗎𝖾𝗇 🄳𝗂́𝖺 🌤"
-    : jam < "15:00:00"
-    ? "🄵𝖾𝗅𝗂𝗓 🅂𝗂𝖾𝗌𝗍𝖺 ⛅"
-    : jam < "19:00:00"
-    ? "🄱𝗎𝖾𝗇𝖺𝗌 🅃𝖺𝗋𝖽𝖾𝗌 🌆"
-    : jam < "20:00:00"
-    ? "🄱𝗎𝖾𝗇𝖺𝗌 🄽𝗈𝖼𝗁𝖾𝗌 🌙"
-    : "🄱𝗎𝖾𝗇𝖺𝗌 🄽𝗈𝖼𝗁𝖾𝗌 🌙";
-    /*const saludo =
+    const ucapan =
       jam < "05:00:00"
-        ? "🄵𝖾𝗅𝗂𝗓 🄼𝖺𝖽𝗋𝗎𝗀𝖺𝖽𝖺 🌟"
+        ? "🄱uen 🄳ía 🌞"
         : jam < "11:00:00"
-        ? "🄱𝗎𝖾𝗇 🄳𝗂́𝖺 🌤"
+        ? "🄱uen 🄳ía 🌞"
         : jam < "15:00:00"
-        ? "🄵𝖾𝗅𝗂𝗓 🅂𝗂𝖾𝗌𝗍𝖺 ⛅"
+        ? "🄱uenas 🅃ardes 🌄"
         : jam < "19:00:00"
-        ? "🄱𝗎𝖾𝗇𝖺𝗌 🅃𝖺𝗋𝖽𝖾𝗌 🌆"
-        : "🄱𝗎𝖾𝗇𝖺𝗌 🄽𝗈𝖼𝗁𝖾𝗌 🌙";*/
+        ? "🄱uenas 🅃ardes 🌄"
+        : "🄱uenas 🄽oches 🌛";
 
-    
-    const fkontak = {
-      key: {
-        participant: "0@s.whatsapp.net",
-        ...(m.chat ? { remoteJid: "status@broadcast" } : {}),
-      },
-      message: {
-        contactMessage: {
-          displayName: `${m.pushName || "Usuario"}`,
-          vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${m.pushName || "Usuario"};;;\nFN:${m.pushName || "Usuario"}\nitem1.TEL;waid=${
-            m.sender.split("@")[0]
-          }:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
-        },
-      },
-    };
-    
- await m.react("🦇");
-    
-    const textoMenu = `
-${saludo}, 𝖲𝗈𝗒 ${namebot}
+    const userId = m.sender;
 
-\`💋 𝖴𝗌𝗎𝖺𝗋𝗂𝗈:\` *${m.pushName || "Usuario"}*
-\`🔥 𝖵𝖾𝗋𝗌𝗂𝗈𝗇:\` ${version}
+    let txt = `
+۪֔⏜꯭ᩧᰰ᮫̩̥̩̥︵ּ۪۪۪֘᷼𓇺꥓᮫ּ̥̩̥̩̥̊᷼︵᮫ֵֹ۪۪۪꤮ 「꯭ּ✿⃘꯭֟፝͝ ᮫ּ」 ֵ꤮ֹ֪̊︵᮫̥̩̥̩̥֔᷼𓇹᮫ֹ۪۪𝆬𝆬᷼︵꯭ᩙᰰ᮫̩̥̩̥⏜ֵֹ۪۪۪۪
+> ${ucapan}, *${m.pushName || "ᥙsᥙᥲrі᥆"} 𝖲᥆ᥡ ${namebot}*
+  
+˙.꒷🍒.𖦹˙ \`ℂ𝕣𝕖𝕒𝕕𝕠𝕣𝕒\` : *𝕮𝖍𝖎𝖓𝖆𝕸𝖎𝖙𝖟𝖚𝖐𝖎*
+˙.꒷🍒.𖦹˙ \`𝕍𝕖𝕣𝕤𝕚𝕠𝕟\` : ${version}
+˙.꒷🍒.𖦹˙ \`𝕄𝕠𝕥𝕠𝕣\`  : *𝖡ᥲіᥣᥱᥡs*
 
+۪֔⏜꯭ᩧᰰ᮫̩̥̩̥︵ּ۪۪۪֘᷼𓇺꥓᮫ּ̥̩̥̩̥̊᷼︵᮫ֵֹ۪۪۪꤮ 「꯭ּ✿⃘꯭֟፝͝ ᮫ּ」 ֵ꤮ֹ֪̊︵᮫̥̩̥̩̥֔᷼𓇹᮫ֹ۪۪𝆬𝆬᷼︵꯭ᩙᰰ᮫̩̥̩̥⏜ֵֹ۪۪۪۪
+\n`;
 
-\`.  . ︵ 𝖦𝖤𝖭𝖤𝖱𝖠𝖫.  ◌Ⳋ𝅄\`
+    const categories = {};
+    cmds.forEach((cmd) => {
+      if (!cmd.command) return;
+      const cat = (cmd.category || "sіᥒ ᥴᥲ𝗍ᥱg᥆rі́ᥲ").toLowerCase();
+      if (!categories[cat]) categories[cat] = [];
+      if (!categories[cat].some((c) => c.command[0] === cmd.command[0])) {
+        categories[cat].push(cmd);
+      }
+    });
 
-˙.꒷🩸.𖦹˙ іᥒ𝖿᥆
-˙.꒷🩸.𖦹˙ mᥱᥒᥙ
-˙.꒷🩸.𖦹˙ ⍴іᥒg
-˙.꒷🩸.𖦹˙ ᥣіძ
+    for (const [cat, commands] of Object.entries(categories)) {
+      const catName = cat.charAt(0).toUpperCase() + cat.slice(1);
+      txt += `\`.  . ︵ ${catName}.  ◌Ⳋ𝅄\`\n`;
+      commands.forEach((cmd) => {
+        txt += `౨ৎ • #${cmd.command[0]}\n`;
+      });
+      txt += `\n`;
+    }
 
-\`.  . ︵ 𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣𝖤𝖱.  ◌Ⳋ𝅄\`
+    txt += `\`⠀.  .  ͜ ⋆. ୨🌷୧˚⋆   ◌Ⳋ𝅄\``;
 
-˙.꒷🦇.𖦹˙ ძrі᥎ᥱ
-˙.꒷🦇.𖦹˙ ძr᥆⍴ᑲ᥆᥊
-˙.꒷🦇.𖦹˙ 𝖿ᑲ
-˙.꒷🦇.𖦹˙ mᥱძіᥲ𝖿іrᥱ
-˙.꒷🦇.𖦹˙ ⍴ᥣᥲᥡᥲᥙძі᥆
-˙.꒷🦇.𖦹˙ ⍴ᥣᥲᥡ᥎іძᥱ᥆
-˙.꒷🦇.𖦹˙ s⍴᥆𝗍і𝖿ᥡ
-˙.꒷🦇.𖦹˙ 𝗍іk𝗍᥆k
-˙.꒷🦇.𖦹˙ 𝗍ᥕі𝗍𝗍ᥱr
-
-\`.  . ︵ 𝖦𝖱𝖮𝖴𝖯𝖲.  ◌Ⳋ𝅄\`
-
-˙.꒷🩸.𖦹˙ ᥴᥣ᥆sᥱ
-˙.꒷🩸.𖦹˙ ᥆⍴ᥱᥒ
-˙.꒷🩸.𖦹˙ ᥣіᥒk
-˙.꒷🩸.𖦹˙ ძᥱᥣ
-˙.꒷🩸.𖦹˙ ძᥱm᥆rᥱ
-˙.꒷🩸.𖦹˙ ⍴r᥆m᥆𝗍ᥱ
-˙.꒷🩸.𖦹˙ һіძᥱ𝗍ᥲg
-˙.꒷🩸.𖦹˙ іᥒ𝖿᥆grᥙ⍴᥆
-˙.꒷🩸.𖦹˙ kіᥴk
-˙.꒷🩸.𖦹˙ kіᥴkᥲᥣᥣ
-˙.꒷🩸.𖦹˙ ᥆ᥒ
-˙.꒷🩸.𖦹˙ rᥱ᥎᥆kᥱ
-˙.꒷🩸.𖦹˙ sᥱ𝗍ძᥱsᥴ
-˙.꒷🩸.𖦹˙ sᥱ𝗍ᥒᥲmᥱ
-˙.꒷🩸.𖦹˙ 𝗍᥆ძ᥆s
-
-\`.  . ︵ 𝖥𝖴𝖭.  ◌Ⳋ𝅄\`
-
-˙.꒷🦇.𖦹˙ gᥲᥡ
-˙.꒷🦇.𖦹˙ ȷᥲᥣᥲmᥱ
-˙.꒷🦇.𖦹˙ 𝖿᥆rmᥲr⍴ᥲrᥱȷᥲ5
-˙.꒷🦇.𖦹˙ 𝖿rᥲsᥱ
-˙.꒷🦇.𖦹˙ ᥒ᥆mᑲrᥱᥒіᥒȷᥲ
-˙.꒷🦇.𖦹˙ ⍴іr᥆⍴᥆
-
-\`.  . ︵ 𝖠𝖭𝖨𝖬𝖤.  ◌Ⳋ𝅄\`
-
-˙.꒷🩸.𖦹˙ ᥲᥒgrᥡ
-˙.꒷🩸.𖦹˙ ძᥲᥒᥴᥱ
-˙.꒷🩸.𖦹˙ һᥲ⍴⍴ᥡ
-˙.꒷🩸.𖦹˙ һᥱᥣᥣ᥆
-˙.꒷🩸.𖦹˙ һᥙg
-˙.꒷🩸.𖦹˙ kіss
-˙.꒷🩸.𖦹˙ ᥣ᥆᥎ᥱ
-˙.꒷🩸.𖦹˙ sᥲძ
-
-\`.  . ︵ 𝖳𝖮𝖮𝖫𝖲.  ◌Ⳋ𝅄\`
-
-˙.꒷🦇.𖦹˙ ᥴᥲᥣ
-˙.꒷🦇.𖦹˙ ᥴᥣіmᥲ
-˙.꒷🦇.𖦹˙ һ᥆rᥲrі᥆
-˙.꒷🦇.𖦹˙ ᥣᥱ𝗍rᥲ
-
-\`.  . ︵ 𝖲𝖳𝖨𝖢𝖪𝖤𝖱𝖲.  ◌Ⳋ𝅄\`
-
-˙.꒷🩸.𖦹˙ s𝗍іᥴkᥱr
-
-\`.  . ︵ 𝖮𝖶𝖭𝖤𝖱.  ◌Ⳋ𝅄\`
-
-˙.꒷🦇.𖦹˙ ᥲᥙ𝗍᥆ᥲძmіᥒ
-˙.꒷🦇.𖦹˙ kіᥴk2
-˙.꒷🦇.𖦹˙ ᥙ⍴ძᥲ𝗍ᥱ
-
-`.trim();
-
-    const videoUrl = "https://files.catbox.moe/wacw2i.mp4"; 
-
-    await client.sendMessage(
+    await conn.sendMessage(
       m.chat,
       {
-        video: { url: videoUrl },
-        caption: textoMenu,
-        gifPlayback: true, 
+        text: txt,
         contextInfo: {
+          mentionedJid: [userId],
+          externalAdReply: {
+            title: namebot,
+            body: textbot,
+            mediaType: 1,
+            mediaUrl: "https://instagram.com/its.chinitaaa_",
+            sourceUrl: "https://instagram.com/its.chinitaaa_",
+            thumbnailUrl: banner,
+            showAdAttribution: false,
+            containsAutoReply: true,
+            renderLargerThumbnail: false,
+          },
           forwardingScore: 1,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
@@ -146,17 +77,9 @@ ${saludo}, 𝖲𝗈𝗒 ${namebot}
             serverMessageId: "1",
             newsletterName: my.name1,
           },
-          externalAdReply: {
-            title: `${namebot}`,
-          //  body: `${dev}`,
-            thumbnailUrl: "https://files.catbox.moe/psvfzq.jpg", 
-            sourceUrl: "https://draculaura.vercel.app", 
-            mediaType: 1,
-            renderLargerThumbnail: false,
-          },
         },
       },
-      { quoted: fkontak }
+      { quoted: m }
     );
   },
 };

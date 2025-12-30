@@ -161,11 +161,11 @@ function createCaption(title, author, duration, created_at = "") {
 function createSearchCaption(data) {
   return `❀ *Título ›* ${data.title || "No disponible"}
 
-☕︎ Autor › ${data.author?.nickname || "Desconocido"} ${
+> ☕︎ Autor › ${data.author?.nickname || "Desconocido"} ${
     data.author?.unique_id ? `@${data.author.unique_id}` : ""
   }
-✧︎ Duración › ${data.duration || "No disponible"}
-𝅘𝅥𝅮 Música › ${
+> ✧︎ Duración › ${data.duration || "No disponible"}
+> 𝅘𝅥𝅮 Música › ${
     data.music?.title ||
     `[${data.author?.nickname || "No disponible"}] original sound - ${
       data.author?.unique_id || "unknown"

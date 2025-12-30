@@ -96,7 +96,7 @@ module.exports = {
   },
 };
 
-// Funciones auxiliares
+await m.react('⏳');
 function createCaption(title, author, duration, created_at = "") {
   return `❀ *Título ›* \`${title || "No disponible"}\`
 > ☕︎ Autor › *${author?.nickname || author?.unique_id || "No disponible"}*
@@ -106,8 +106,9 @@ function createCaption(title, author, duration, created_at = "") {
 > 𝅘𝅥𝅮 Música » [${author?.nickname || author?.unique_id || "No disponible"}] original sound - ${
     author?.unique_id || "unknown"
   }`;
+  await m.react('✅');
 }
-
+await m.react('⏳');
 function createSearchCaption(data) {
   return `❀ Título › ${data.title || "No disponible"}
 
@@ -121,4 +122,5 @@ function createSearchCaption(data) {
       data.author?.unique_id || "unknown"
     }`
   }`;
+  await m.react('✅');
 }

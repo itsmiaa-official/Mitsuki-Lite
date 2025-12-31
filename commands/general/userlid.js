@@ -19,7 +19,7 @@ module.exports = {
       let lid = user?.[0]?.lid || "No encontrado"
 
       let info = `
-📌 *Información de WhatsApp*
+ \`🌷 Información de WhatsApp 🌷\`
 - JID: ${jid}
 - LID: ${lid}
       `.trim()

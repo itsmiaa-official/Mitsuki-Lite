@@ -30,7 +30,7 @@ module.exports = {
       GNQ: 'Africa/Malabo'
     };
 
-    let msg = '「 ZONA-HORARIA ⏰ 」\n\n';
+    let msg = '\`「 ZONA-HORARIA ⏰ 」\`\n\n';
     for (let [key, value] of Object.entries(zones)) {
       msg += `⏱️${key.padEnd(11)}: ${moment().tz(value).format('DD/MM HH:mm')}\n`;
     }

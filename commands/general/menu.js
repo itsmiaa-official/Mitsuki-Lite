@@ -28,7 +28,7 @@ module.exports = {
 ˙.꒷🔥.𖦹˙ \`𝖵𝖾𝗋𝗌𝗂𝗈𝗇\` : ${version}
 ˙.꒷🔥.𖦹˙ \`𝖬𝗈𝗍𝗈𝗋\` : *𝖡ᥲіᥣᥱᥡs*
 
-> La versión original de 𝕮𝖍𝖎𝖓𝖆𝕸𝖎𝖙𝖟𝖚𝖐𝖎 es totalmente privada,debido a que es un bot personalizado y creado exclusivamente para ${author}.
+> La versión original de 𝕮𝖍𝖎𝖓𝖆𝕸𝖎𝖙𝖟𝖚𝖐𝖎 es totalmente privada, debido a que es un bot personalizado y creado exclusivamente para ${author}.
 \n`;
 
     const categories = {};

@@ -23,7 +23,7 @@ module.exports = {
 
 > La versión original de 𝕮𝖍𝖎𝖓𝖆𝕸𝖎𝖙𝖟𝖚𝖐𝖎 es totalmente privada, debido a que es un bot personalizado y creado exclusivamente para 𝕮𝖍𝖎𝖓𝖆.
 
-˚ ₊ ‧ ꒰🎀꒱  — \`『 𝐀𝐍𝐈𝐌𝐄 』\` 
+˚ ₊ ‧ ୨🌸୧  — \`『 𝐀𝐍𝐈𝐌𝐄 』\` 
 ౨ৎ • #angry
 ౨ৎ • #dance
 ౨ৎ • #happy
@@ -33,7 +33,7 @@ module.exports = {
 ౨ৎ • #love
 ౨ৎ • #sad
 
-˚ ₊ ‧ ꒰🎀꒱  — \`『 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 』\` 
+˚ ₊ ‧ ୨🌸୧  — \`『 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 』\` 
 ౨ৎ • #drive
 ౨ৎ • #dropbox
 ౨ৎ • #fb
@@ -44,21 +44,21 @@ module.exports = {
 ౨ৎ • #tiktok
 ౨ৎ • #twitter
 
-˚ ₊ ‧ ꒰🎀꒱  — \`『 𝐅𝐔𝐍 』\` 
+˚ ₊ ‧ ୨🌸୧ — \`『 𝐅𝐔𝐍 』\` 
 ౨ৎ • #gay
 ౨ৎ • #jalame
 ౨ৎ • #formarpareja5
 ౨ৎ • #frase
 ౨ৎ • #piropo
 
-˚ ₊ ‧ ꒰🎀꒱  — \`『 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 』\` 
+˚ ₊ ‧ ୨🌸୧  — \`『 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 』\` 
 ౨ৎ • #info
 ౨ৎ • #help
 ౨ৎ • #ping
 ౨ৎ • #runtime
 ౨ৎ • #lid
 
-˚ ₊ ‧ ꒰🎀꒱  — \`『 𝐆𝐑𝐎𝐔𝐏𝐒 』\` 
+˚ ₊ ‧ ୨🌸୧  — \`『 𝐆𝐑𝐎𝐔𝐏𝐒 』\` 
 ౨ৎ • #close
 ౨ৎ • #del
 ౨ৎ • #demote
@@ -75,12 +75,12 @@ module.exports = {
 ౨ৎ • #setname
 ౨ৎ • #todos
 
-˚ ₊ ‧ ꒰🎀꒱  — \`『 𝐎𝐖𝐍𝐄𝐑 』\` 
+˚ ₊ ‧ ୨🌸୧  — \`『 𝐎𝐖𝐍𝐄𝐑 』\` 
 ౨ৎ • #autoadmin
 ౨ৎ • #kick2
 ౨ৎ • #update
 
-˚ ₊ ‧ ꒰🎀꒱  — \`『 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 』\` 
+˚ ₊ ‧ ୨🌸୧  — \`『 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 』\` 
 ౨ৎ • #sticker
 
 ˚ ₊ ‧ ୨🌸୧  — \`『 𝐓𝐎𝐎𝐋𝐒 』\` 

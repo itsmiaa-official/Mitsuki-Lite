@@ -25,7 +25,6 @@ global.mess = {
 //*─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ*
 
 global.icono = "https://files.catbox.moe/jeo8rk.jpg";
-global.banner = "https://files.catbox.moe/7o8u1n.jpg";
 global.catalogo = "https://files.catbox.moe/riclwm.jpg";
 
 global.my = {

@@ -117,7 +117,7 @@ module.exports = {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: global.my?.ch || "120363403176894973@newsletter",
-              serverMessageId: "1",
+              serverMessageId: "",
               newsletterName: global.my?.name1 || "【 ✰ 】Canal Oficial",
             },
           },

@@ -9,7 +9,7 @@ module.exports = {
 
       const username = m.pushName || (await client.getName(m.sender)) || m.sender.split("@")[0];
 
-      const menuImages = ["menu.jpg", "menu2.jpg"];
+      const menuImages = ["menu.jpg", "menu2.jpg", "menu3.jpg"];
       const existingImages = menuImages.filter(img => fs.existsSync(`./src/${img}`));
       const menuImage = fs.readFileSync(`./src/${existingImages[Math.floor(Math.random() * existingImages.length)]}`);
 

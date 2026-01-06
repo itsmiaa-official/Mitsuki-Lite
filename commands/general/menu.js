@@ -125,9 +125,9 @@ module.exports = {
             forwardingScore: 1,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-              newsletterJid: global.my?.ch || "120363403176894973@newsletter",
+              newsletterJid: global.my?.ch || "120363345778623279@newsletter",
               serverMessageId: "",
-              newsletterName: global.my?.name1 || "【 ✰ 】Canal Oficial",
+              newsletterName: global.my?.name1 || "𝕸𝖎𝖙𝖘𝖚𝖐𝖎 𝕷𝖎𝖙𝖊 𝕺𝖋𝖋𝖎𝖈𝖎𝖆𝖑 𝕮𝖍𝖆𝖓𝖓𝖊𝖑",
             },
           },
         },

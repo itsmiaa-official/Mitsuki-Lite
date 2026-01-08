@@ -18,7 +18,6 @@ module.exports = {
         );
       }
 
-      await m.react("⏱️");
       await client.sendMessage(
         m.chat,
         { text: "🎧 Buscando tu audio..." },
@@ -103,8 +102,6 @@ module.exports = {
         },
         { quoted: m }
       );
-
-      await m.react("✅");
 
     } catch (err) {
       await client.sendMessage(

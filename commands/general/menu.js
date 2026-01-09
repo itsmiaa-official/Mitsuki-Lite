@@ -23,14 +23,11 @@ module.exports = {
     try {
       const from = m.chat
       
-      const name = visual?.name || global.namebot || "Bot"
-      const banner = visual?.banner
-
       const uptime = formatUptime(process.uptime())
       const fecha = formatDate()
 
       const menuText = `
-「✿」Hola soy *${name}* (${identity})
+「✿」Hola soy *${namebot}*
 
 ⏰ *Fecha:* ${fecha}
 🚀 *Uptime:* ${uptime}
